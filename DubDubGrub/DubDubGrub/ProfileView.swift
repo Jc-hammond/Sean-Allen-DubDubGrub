@@ -18,33 +18,21 @@ struct ProfileView: View {
     var body: some View {
         VStack {
             ZStack {
-                Color(.secondarySystemBackground)
-                    .frame(height: 130)
-                    .cornerRadius(12)
-                    .padding(.horizontal)
+                NamedBackgroundView()
                 
                 HStack(spacing: 16) {
                     ZStack {
                         AvatarView(size: 84)
-                        Image(systemName: "square.and.pencil")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 14, height: 14)
-                            .foregroundColor(.white)
-                            .offset(y: 30)
+                        EditImage()
                     }
                     .padding(.leading, 12)
                     
                     VStack(spacing: 1) {
                         TextField("First Name", text: $firstName)
-                            .font(.system(size: 32, weight: .bold))
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.75)
+                            .profileNameStyle()
                         
                         TextField("Last Name", text: $firstName)
-                            .font(.system(size: 32, weight: .bold))
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.75)
+                            .profileNameStyle() 
                         
                         
                         TextField("Company Name", text: $companyName)
@@ -97,5 +85,25 @@ struct ProfileView_Previews: PreviewProvider {
         NavigationView {
             ProfileView()
         }
+    }
+}
+
+struct NamedBackgroundView: View {
+    var body: some View {
+        Color(.secondarySystemBackground)
+            .frame(height: 130)
+            .cornerRadius(12)
+            .padding(.horizontal)
+    }
+}
+
+struct EditImage: View {
+    var body: some View {
+        Image(systemName: "square.and.pencil")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 14, height: 14)
+            .foregroundColor(.white)
+            .offset(y: 30)
     }
 }

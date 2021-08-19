@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7101887526CDC1EF004D00A3 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101887426CDC1EE004D00A3 /* LocationCell.swift */; };
+		7101887726CDC229004D00A3 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101887626CDC229004D00A3 /* AvatarView.swift */; };
+		7101887B26CDCB8A004D00A3 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101887A26CDCB8A004D00A3 /* CustomModifiers.swift */; };
+		7101887F26CDCBBC004D00A3 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101887E26CDCBBC004D00A3 /* View+Ext.swift */; };
 		7104186926A941E300443BEA /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7104186826A941E300443BEA /* DubDubGrubApp.swift */; };
 		7104186D26A941E600443BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7104186C26A941E600443BEA /* Assets.xcassets */; };
 		7104187026A941E600443BEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7104186F26A941E600443BEA /* Preview Assets.xcassets */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7101887426CDC1EE004D00A3 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		7101887626CDC229004D00A3 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		7101887A26CDCB8A004D00A3 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		7101887E26CDCBBC004D00A3 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		7104186526A941E300443BEA /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7104186826A941E300443BEA /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		7104186C26A941E600443BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +86,10 @@
 				7104188126A9465C00443BEA /* LocationListView.swift */,
 				7104188326A9466D00443BEA /* ProfileView.swift */,
 				715E809626B1126F0050A4C6 /* LocationDetailView.swift */,
+				7101887426CDC1EE004D00A3 /* LocationCell.swift */,
+				7101887626CDC229004D00A3 /* AvatarView.swift */,
+				7101887A26CDCB8A004D00A3 /* CustomModifiers.swift */,
+				7101887E26CDCBBC004D00A3 /* View+Ext.swift */,
 			);
 			path = DubDubGrub;
 			sourceTree = "<group>";
@@ -168,12 +180,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7104186926A941E300443BEA /* DubDubGrubApp.swift in Sources */,
+				7101887B26CDCB8A004D00A3 /* CustomModifiers.swift in Sources */,
 				7104188026A9464000443BEA /* LocationMapView.swift in Sources */,
 				7104188226A9465C00443BEA /* LocationListView.swift in Sources */,
 				715E809726B1126F0050A4C6 /* LocationDetailView.swift in Sources */,
 				7104187E26A945C100443BEA /* AppTabView.swift in Sources */,
 				7104188426A9466D00443BEA /* ProfileView.swift in Sources */,
+				7101887526CDC1EF004D00A3 /* LocationCell.swift in Sources */,
+				7101887726CDC229004D00A3 /* AvatarView.swift in Sources */,
 				7104187C26A9454600443BEA /* Color+Ext.swift in Sources */,
+				7101887F26CDCBBC004D00A3 /* View+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

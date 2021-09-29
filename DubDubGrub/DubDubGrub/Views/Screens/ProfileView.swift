@@ -43,23 +43,14 @@ struct ProfileView: View {
             }
             
             VStack(alignment: .leading, spacing: 8) {
-                Text("Bio: ")
-                    .font(.callout)
-                    .foregroundColor(.secondary)
-                    +
-                    Text("\(100 - bio.count)")
-                    .bold()
-                    .font(.callout)
-                    .foregroundColor(bio.count <= 100 ? .brandPrimary : Color(.systemPink))
-                    +
-                    Text(" Characters Remain")
-                    .font(.callout)
-                    .foregroundColor(.secondary)
+                
+                CharactersRemainView(currentCount: bio.count)
                 
                 TextEditor(text: $bio)
                     .frame(height: 100)
                     .overlay(RoundedRectangle(cornerRadius: 8)
                                 .stroke(Color.secondary, lineWidth: 1))
+                
             }
             .padding(.horizontal, 20)
             
@@ -68,12 +59,7 @@ struct ProfileView: View {
             Button {
                 
             } label: {
-                Text("Create Profile")
-                    .bold()
-                    .frame(width: 280, height: 44)
-                    .background(Color.brandPrimary)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
+                DDGButton(title: "Create Profile")
             }
         }
         .navigationTitle("Profile")
@@ -105,5 +91,27 @@ struct EditImage: View {
             .frame(width: 14, height: 14)
             .foregroundColor(.white)
             .offset(y: 30)
+    }
+}
+
+
+struct CharactersRemainView: View {
+    
+    var currentCount: Int
+    
+    var body: some View {
+        Text("Bio: ")
+            .font(.callout)
+            .foregroundColor(.secondary)
+            +
+            Text("\(100 - currentCount)")
+            .bold()
+            .font(.callout)
+            .foregroundColor(currentCount <= 100 ? .brandPrimary : Color(.systemPink))
+            +
+            Text(" Characters Remain")
+            .font(.callout)
+            .foregroundColor(.secondary)
+        
     }
 }

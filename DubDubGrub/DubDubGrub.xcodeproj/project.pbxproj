@@ -25,6 +25,9 @@
 		71C0502527042ECD00E151FB /* DDGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C0502427042ECD00E151FB /* DDGLocation.swift */; };
 		71C050272704327400E151FB /* DDGProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C050262704327400E151FB /* DDGProfile.swift */; };
 		71C050292704341300E151FB /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C050282704341300E151FB /* MockData.swift */; };
+		71C0502C2706961900E151FB /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C0502B2706961900E151FB /* CloudKitManager.swift */; };
+		71C0502E270696F900E151FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C0502D270696F900E151FB /* Constants.swift */; };
+		71C0503027069A6F00E151FB /* CKRecord+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C0502F27069A6F00E151FB /* CKRecord+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		71C0502427042ECD00E151FB /* DDGLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
 		71C050262704327400E151FB /* DDGProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGProfile.swift; sourceTree = "<group>"; };
 		71C050282704341300E151FB /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		71C0502B2706961900E151FB /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		71C0502D270696F900E151FB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		71C0502F27069A6F00E151FB /* CKRecord+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecord+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +72,10 @@
 		7101888226CEC374004D00A3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				71C0502D270696F900E151FB /* Constants.swift */,
 				7104187B26A9454600443BEA /* Color+Ext.swift */,
 				7101887E26CDCBBC004D00A3 /* View+Ext.swift */,
+				71C0502F27069A6F00E151FB /* CKRecord+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -132,8 +140,8 @@
 		7104186726A941E300443BEA /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				71C0502A270695E100E151FB /* Utilities */,
 				71C0502327042EBD00E151FB /* Model */,
-				7101888226CEC374004D00A3 /* Extensions */,
 				7101888326CEC38C004D00A3 /* Views */,
 				7104187726A9422F00443BEA /* DubDubGrub.entitlements */,
 				7104186826A941E300443BEA /* DubDubGrubApp.swift */,
@@ -168,6 +176,15 @@
 				71C050282704341300E151FB /* MockData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		71C0502A270695E100E151FB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7101888226CEC374004D00A3 /* Extensions */,
+				71C0502B2706961900E151FB /* CloudKitManager.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7104186926A941E300443BEA /* DubDubGrubApp.swift in Sources */,
+				71C0502E270696F900E151FB /* Constants.swift in Sources */,
 				7101887B26CDCB8A004D00A3 /* CustomModifiers.swift in Sources */,
 				7104188026A9464000443BEA /* LocationMapView.swift in Sources */,
 				7104188226A9465C00443BEA /* LocationListView.swift in Sources */,
@@ -249,8 +267,10 @@
 				71C0502527042ECD00E151FB /* DDGLocation.swift in Sources */,
 				7104187E26A945C100443BEA /* AppTabView.swift in Sources */,
 				7104188426A9466D00443BEA /* ProfileView.swift in Sources */,
+				71C0502C2706961900E151FB /* CloudKitManager.swift in Sources */,
 				7101887526CDC1EF004D00A3 /* LocationCell.swift in Sources */,
 				7101887726CDC229004D00A3 /* AvatarView.swift in Sources */,
+				71C0503027069A6F00E151FB /* CKRecord+Ext.swift in Sources */,
 				7101888126CEC236004D00A3 /* DDGButton.swift in Sources */,
 				7104187C26A9454600443BEA /* Color+Ext.swift in Sources */,
 				7101887F26CDCBBC004D00A3 /* View+Ext.swift in Sources */,

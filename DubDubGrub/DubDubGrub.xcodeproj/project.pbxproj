@@ -29,6 +29,8 @@
 		71C0502E270696F900E151FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C0502D270696F900E151FB /* Constants.swift */; };
 		71C0503027069A6F00E151FB /* CKRecord+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C0502F27069A6F00E151FB /* CKRecord+Ext.swift */; };
 		71C0503227069B7600E151FB /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C0503127069B7600E151FB /* AlertItem.swift */; };
+		71C0503527069F6700E151FB /* LocationMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C0503427069F6700E151FB /* LocationMapViewModel.swift */; };
+		71C050382706A33C00E151FB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C050372706A33C00E151FB /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		71C0502D270696F900E151FB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		71C0502F27069A6F00E151FB /* CKRecord+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecord+Ext.swift"; sourceTree = "<group>"; };
 		71C0503127069B7600E151FB /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		71C0503427069F6700E151FB /* LocationMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapViewModel.swift; sourceTree = "<group>"; };
+		71C050372706A33C00E151FB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,11 +98,11 @@
 		7101888426CEC399004D00A3 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				71C0503327069F4D00E151FB /* LocationMapView */,
 				715E809626B1126F0050A4C6 /* LocationDetailView.swift */,
 				7104187D26A945C100443BEA /* AppTabView.swift */,
 				7104188326A9466D00443BEA /* ProfileView.swift */,
 				7104188126A9465C00443BEA /* LocationListView.swift */,
-				7104187F26A9464000443BEA /* LocationMapView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -182,12 +186,30 @@
 		71C0502A270695E100E151FB /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				71C050362706A32D00E151FB /* Managers */,
 				7101888226CEC374004D00A3 /* Extensions */,
 				71C0502D270696F900E151FB /* Constants.swift */,
-				71C0502B2706961900E151FB /* CloudKitManager.swift */,
 				71C0503127069B7600E151FB /* AlertItem.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		71C0503327069F4D00E151FB /* LocationMapView */ = {
+			isa = PBXGroup;
+			children = (
+				71C0503427069F6700E151FB /* LocationMapViewModel.swift */,
+				7104187F26A9464000443BEA /* LocationMapView.swift */,
+			);
+			path = LocationMapView;
+			sourceTree = "<group>";
+		};
+		71C050362706A32D00E151FB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				71C0502B2706961900E151FB /* CloudKitManager.swift */,
+				71C050372706A33C00E151FB /* LocationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +285,7 @@
 				71C0502E270696F900E151FB /* Constants.swift in Sources */,
 				7101887B26CDCB8A004D00A3 /* CustomModifiers.swift in Sources */,
 				7104188026A9464000443BEA /* LocationMapView.swift in Sources */,
+				71C0503527069F6700E151FB /* LocationMapViewModel.swift in Sources */,
 				7104188226A9465C00443BEA /* LocationListView.swift in Sources */,
 				71C050292704341300E151FB /* MockData.swift in Sources */,
 				715E809726B1126F0050A4C6 /* LocationDetailView.swift in Sources */,
@@ -275,6 +298,7 @@
 				7101887526CDC1EF004D00A3 /* LocationCell.swift in Sources */,
 				7101887726CDC229004D00A3 /* AvatarView.swift in Sources */,
 				71C0503027069A6F00E151FB /* CKRecord+Ext.swift in Sources */,
+				71C050382706A33C00E151FB /* LocationManager.swift in Sources */,
 				7101888126CEC236004D00A3 /* DDGButton.swift in Sources */,
 				7104187C26A9454600443BEA /* Color+Ext.swift in Sources */,
 				7101887F26CDCBBC004D00A3 /* View+Ext.swift in Sources */,

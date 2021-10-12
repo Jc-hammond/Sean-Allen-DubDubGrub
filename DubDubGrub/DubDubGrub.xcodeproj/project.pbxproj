@@ -22,6 +22,7 @@
 		7104188226A9465C00443BEA /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7104188126A9465C00443BEA /* LocationListView.swift */; };
 		7104188426A9466D00443BEA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7104188326A9466D00443BEA /* ProfileView.swift */; };
 		715E809726B1126F0050A4C6 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E809626B1126F0050A4C6 /* LocationDetailView.swift */; };
+		718CF9A227160B0900C0157E /* CKAsset+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CF9A127160B0900C0157E /* CKAsset+Ext.swift */; };
 		71C0502527042ECD00E151FB /* DDGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C0502427042ECD00E151FB /* DDGLocation.swift */; };
 		71C050272704327400E151FB /* DDGProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C050262704327400E151FB /* DDGProfile.swift */; };
 		71C050292704341300E151FB /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C050282704341300E151FB /* MockData.swift */; };
@@ -52,6 +53,7 @@
 		7104188126A9465C00443BEA /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		7104188326A9466D00443BEA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		715E809626B1126F0050A4C6 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		718CF9A127160B0900C0157E /* CKAsset+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKAsset+Ext.swift"; sourceTree = "<group>"; };
 		71C0502427042ECD00E151FB /* DDGLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
 		71C050262704327400E151FB /* DDGProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGProfile.swift; sourceTree = "<group>"; };
 		71C050282704341300E151FB /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				7104187B26A9454600443BEA /* Color+Ext.swift */,
 				7101887E26CDCBBC004D00A3 /* View+Ext.swift */,
 				71C0502F27069A6F00E151FB /* CKRecord+Ext.swift */,
+				718CF9A127160B0900C0157E /* CKAsset+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				7101887726CDC229004D00A3 /* AvatarView.swift in Sources */,
 				71C0503027069A6F00E151FB /* CKRecord+Ext.swift in Sources */,
 				71C050382706A33C00E151FB /* LocationManager.swift in Sources */,
+				718CF9A227160B0900C0157E /* CKAsset+Ext.swift in Sources */,
 				7101888126CEC236004D00A3 /* DDGButton.swift in Sources */,
 				7104187C26A9454600443BEA /* Color+Ext.swift in Sources */,
 				7101887F26CDCBBC004D00A3 /* View+Ext.swift in Sources */,

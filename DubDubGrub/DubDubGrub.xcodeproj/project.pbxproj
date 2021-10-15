@@ -23,6 +23,9 @@
 		7104188426A9466D00443BEA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7104188326A9466D00443BEA /* ProfileView.swift */; };
 		715E809726B1126F0050A4C6 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E809626B1126F0050A4C6 /* LocationDetailView.swift */; };
 		718CF9A227160B0900C0157E /* CKAsset+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CF9A127160B0900C0157E /* CKAsset+Ext.swift */; };
+		718CF9A42718C5B800C0157E /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CF9A32718C5B800C0157E /* OnboardView.swift */; };
+		718CF9A62718C61800C0157E /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CF9A52718C61800C0157E /* LogoView.swift */; };
+		718CF9A92719E80100C0157E /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CF9A82719E80100C0157E /* XDismissButton.swift */; };
 		71C0502527042ECD00E151FB /* DDGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C0502427042ECD00E151FB /* DDGLocation.swift */; };
 		71C050272704327400E151FB /* DDGProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C050262704327400E151FB /* DDGProfile.swift */; };
 		71C050292704341300E151FB /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C050282704341300E151FB /* MockData.swift */; };
@@ -54,6 +57,9 @@
 		7104188326A9466D00443BEA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		715E809626B1126F0050A4C6 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		718CF9A127160B0900C0157E /* CKAsset+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKAsset+Ext.swift"; sourceTree = "<group>"; };
+		718CF9A32718C5B800C0157E /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
+		718CF9A52718C61800C0157E /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		718CF9A82719E80100C0157E /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		71C0502427042ECD00E151FB /* DDGLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
 		71C050262704327400E151FB /* DDGProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGProfile.swift; sourceTree = "<group>"; };
 		71C050282704341300E151FB /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 				7104187D26A945C100443BEA /* AppTabView.swift */,
 				7104188326A9466D00443BEA /* ProfileView.swift */,
 				7104188126A9465C00443BEA /* LocationListView.swift */,
+				718CF9A32718C5B800C0157E /* OnboardView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -121,9 +128,10 @@
 		7101888626CEC3C5004D00A3 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				718CF9A72719E7F200C0157E /* Buttons */,
 				7101887A26CDCB8A004D00A3 /* CustomModifiers.swift */,
-				7101888026CEC236004D00A3 /* DDGButton.swift */,
 				7101887626CDC229004D00A3 /* AvatarView.swift */,
+				718CF9A52718C61800C0157E /* LogoView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -174,6 +182,15 @@
 				7104187926A9423800443BEA /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		718CF9A72719E7F200C0157E /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				7101888026CEC236004D00A3 /* DDGButton.swift */,
+				718CF9A82719E80100C0157E /* XDismissButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		71C0502327042EBD00E151FB /* Model */ = {
@@ -292,17 +309,20 @@
 				7104188226A9465C00443BEA /* LocationListView.swift in Sources */,
 				71C050292704341300E151FB /* MockData.swift in Sources */,
 				715E809726B1126F0050A4C6 /* LocationDetailView.swift in Sources */,
+				718CF9A92719E80100C0157E /* XDismissButton.swift in Sources */,
 				71C050272704327400E151FB /* DDGProfile.swift in Sources */,
 				71C0502527042ECD00E151FB /* DDGLocation.swift in Sources */,
 				7104187E26A945C100443BEA /* AppTabView.swift in Sources */,
 				7104188426A9466D00443BEA /* ProfileView.swift in Sources */,
 				71C0502C2706961900E151FB /* CloudKitManager.swift in Sources */,
+				718CF9A62718C61800C0157E /* LogoView.swift in Sources */,
 				71C0503227069B7600E151FB /* AlertItem.swift in Sources */,
 				7101887526CDC1EF004D00A3 /* LocationCell.swift in Sources */,
 				7101887726CDC229004D00A3 /* AvatarView.swift in Sources */,
 				71C0503027069A6F00E151FB /* CKRecord+Ext.swift in Sources */,
 				71C050382706A33C00E151FB /* LocationManager.swift in Sources */,
 				718CF9A227160B0900C0157E /* CKAsset+Ext.swift in Sources */,
+				718CF9A42718C5B800C0157E /* OnboardView.swift in Sources */,
 				7101888126CEC236004D00A3 /* DDGButton.swift in Sources */,
 				7104187C26A9454600443BEA /* Color+Ext.swift in Sources */,
 				7101887F26CDCBBC004D00A3 /* View+Ext.swift in Sources */,

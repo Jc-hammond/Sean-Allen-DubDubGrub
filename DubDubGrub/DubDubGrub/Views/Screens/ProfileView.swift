@@ -15,6 +15,7 @@ struct ProfileView: View {
     @State private var bio = ""
     @State private var avatar = PlaceHolderImage.avatar
     @State private var isShowingPhotoPicker = false
+    @State private var alertItem: AlertItem?
     
     
     var body: some View {
@@ -60,12 +61,23 @@ struct ProfileView: View {
             Spacer()
             
             Button {
-                
+                createProfile()
             } label: {
                 DDGButton(title: "Create Profile")
             }
+            .padding(.bottom)
         }
         .navigationTitle("Profile")
+        .toolbar {
+            Button {
+                dismissKeyboard()
+            } label: {
+                Image(systemName: "keyboard.chevron.compact.down")
+            }
+        }
+        .alert(item: $alertItem, content: { alertItem in
+            Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
+        })
         .sheet(isPresented: $isShowingPhotoPicker) {
             PhotoPicker(image: $avatar)
         }
@@ -81,6 +93,13 @@ struct ProfileView: View {
               bio.count <= 100 else {return false}
         
         return true
+    }
+    
+    func createProfile() {
+        guard isValidProfile() else {
+            alertItem = AlertContext.invalidProfile
+            return
+        }
     }
     
 }
